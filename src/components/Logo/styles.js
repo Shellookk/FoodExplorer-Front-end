@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    gap: 0.5;
+    height: 47.78px;
+    width: 323px;
 
-    
+    display: flex;
+    gap: 19.01px;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
 `
