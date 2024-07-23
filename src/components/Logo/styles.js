@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 47.78px;
-    width: 323px;
+    height: 3rem;
+    width: 20rem;
 
     display: flex;
-    gap: 19.01px;
+    gap: 1rem;
     align-items: center;
 
     font-family: "Roboto", sans-serif;
