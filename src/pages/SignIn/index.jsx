@@ -1,9 +1,9 @@
 import { Container } from "./styles"
-import { Footer } from "../../components/Footer"
+import { Logo } from "../../components/Logo"
 export function SignIn() {
   return (
     <Container>
-        <Footer/>
+        <Logo/>
     </Container>
   )
 }
