@@ -54,6 +54,7 @@ export const Form = styled.form`
 
     > #Entrar{
         margin-bottom: 2rem;
+        height: 3rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
