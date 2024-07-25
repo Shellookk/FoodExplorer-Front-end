@@ -1,25 +1,36 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.button`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    padding: 0.75rem 0rem 0.75rem 0rem;
+  background-color: ${({ theme }) => theme.COLORS.TINTS_TOMATO_100};
+  color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  
+  border: 0;
+  height: 3.5rem;
+  padding: 0 1rem;
+  font-weight: 500;
+  border-radius: 0.43rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 
-    border-radius: 0.3125rem;
+  > span {
+    font-size: 1rem;
+  }
 
-
-
-    font-family: "Poppins", sans-serif;
+  > svg {
+    font-size: 1.37rem;
+  }
+  font-family: "Poppins", sans-serif;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     background-color: ${({ theme }) => theme.COLORS.TINTS_TOMATO_100};
 
-    &:hover{
-        background-color: ${({ theme }) => theme.COLORS.TINTS_TOMATO_200};        
+  &:hover{
+      background-color: ${({ theme }) => theme.COLORS.TINTS_TOMATO_200};        
     }
 
-    &:disabled {
+  &:disabled {
     background-color: ${({ theme }) => theme.COLORS.TINTS_TOMATO_400};
   }
-`        
+`;

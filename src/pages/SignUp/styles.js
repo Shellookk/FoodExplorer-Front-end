@@ -6,10 +6,14 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-evenly;
 
-    > div img {
+    #imagem{
         width: 20.2413rem;
         height: 2.9863rem;
         margin-top: 21.3125rem;
+    }
+
+    > div img {
+        width: 20.2413rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
@@ -24,14 +28,14 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-    padding: 4rem;
-    height: 33.7975rem;
     width: 29.75rem;
+    height: 38.8125rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    margin-top: 8.8825rem;
-
+    margin-top: 5.6325rem;
+    margin-bottom: 7rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
     font-family: "Roboto", sans-serif;
     font-weight: 400;
