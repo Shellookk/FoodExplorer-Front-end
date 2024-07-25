@@ -5,32 +5,35 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     > div img {
         width: 20.2413rem;
         height: 2.9863rem;
-        margin-top: 21.3125rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        align-items: center;
+        justify-content: center;
 
-        >div img{
+        margin-right:2.9375rem ;
+        >#imagem{
+            margin-bottom: 4.5625rem;
             margin-top: 9.875rem;
         }
-  }
+    }
     
 `
 
 export const Form = styled.form`
     padding: 4rem;
-    height: 33.7975rem;
     width: 29.75rem;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    margin-top: 8.8825rem;
 
     background-color: ${({ theme }) => theme.COLORS.DARK_700};
     font-family: "Roboto", sans-serif;
@@ -59,10 +62,7 @@ export const Form = styled.form`
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
         background-color: transparent;
+        align-content: center;
 
-        margin-bottom: 21.1875rem;
-        padding: 0 ;
-        padding-left: 4.0625rem;
-        padding-right: 2.9375rem;
   }
 `
